@@ -24,7 +24,7 @@ The agent identifies device types, fetches documentation if needed, and applies 
 4. If unknown → search web + scrape device docs
 5. Convert data to standard JSON format
 6. Validate + refine (via LLM if needed)
-7. Store converted data in MongoDB or something
+7. Store converted data in MongoDB or ... ?
 8. Return success/failure
 
 ---
@@ -79,3 +79,15 @@ The agent identifies device types, fetches documentation if needed, and applies 
   "MeasuredAt": "2025-06-17T12:30:00Z",
   "PatientId": "patient-001"
 }
+```
+
+## Development Checklist
+
+- [ ] `/convert` API endpoint for JSON ingestion  
+- [ ] Device context lookup module  
+- [ ] Web search & scraping logic  
+- [ ] JSON converter with field mapping  
+- [ ] LLM-powered refinement layer  
+- [ ] MongoDB integration  ... 
+- [ ] Logging + retry logic for failed conversions  
+
